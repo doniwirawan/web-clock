@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clock Web</title>
+    </head>
+    <style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Lato','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		}
+    	.clock{
+			text-align: center;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			background-color: rgb(29, 29, 29);
+			color: rgb(243, 243, 243);
+			font-size: 6em;
+			
+		}
+		.time,.date,.day{
+			display: block;
+			position: relative;
+			top: 230px;
+		}
+		.date{
+			font-size: 30px;
+		}
+		.day{
+			font-size: 20px;
+			margin-top: 10px;
+		}
+    </style>
+    <body>
+        <div class="clock">
+            <span class="time"></span>
+            <span class="date"></span>
+            <span class="day"></span>
+        </div>
+ 
+        <script src="../node_modules/moment/moment.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
