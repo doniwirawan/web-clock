@@ -32,13 +32,30 @@
 			font-size: 20px;
 			margin-top: 10px;
 		}
+		.decoration1,.decoration2{
+			position: fixed;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: rgb(85, 87, 87);
+		}
+		.decoration1{
+			top: -50px;
+			left: -50px;
+		}
+		.decoration2{
+			top: 495px;
+			right: -35px;
+		}
     </style>
     <body>
         <div class="clock">
             <span class="time"></span>
             <span class="date"></span>
             <span class="day"></span>
-        </div>
+		</div>
+		<div class="decoration1"></div>
+		<div class="decoration2"></div>
  
         <script src="../node_modules/moment/moment.js"></script>
         <script src="../node_modules/jquery/dist/jquery.min.js"></script>
