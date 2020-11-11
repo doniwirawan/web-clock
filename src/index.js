@@ -15,9 +15,16 @@ fetch("https://type.fit/api/quotes")
         return response.json();
     })
     .then(function (data) {
+        const root = document.querySelector('.quote-area');
+        const randoms = Math.floor(Math.random() * data.length);
+        root.innerHTML = `
+                    <p>"${data[randoms].text}"</p>
+                    <p>-- ${data[randoms].author} --</p>
+                `
+
 
         document.querySelector('.button').addEventListener('click', function () {
-            const root = document.querySelector('.quote-area');
+            // const root = document.querySelector('.quote-area');
             const random = Math.floor(Math.random() * data.length)
             if (data[random].author === null) {
                 root.innerHTML = `
