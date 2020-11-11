@@ -60,8 +60,9 @@ const changeBg = () => {
             bgEl.style.backgroundImage = `url('${data.urls.regular}')`;
         })
 }
-changeBg()
-setInterval(() => changeBg(), 3600000);
 
+document.querySelector('.button2').addEventListener('click', changeBg());
+
+setInterval(() => changeBg(), 3600000);
 
 updateTime();
