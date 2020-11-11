@@ -47,4 +47,21 @@ fetch("https://type.fit/api/quotes")
     });
 
 
+
+
+
+
+const changeBg = () => {
+    fetch('https://api.unsplash.com/photos/random?client_id=kdft8XnUyAbOYEFK2HhZ0MwoidcaBlibl6egG4F-inI')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data.urls.regular);
+            const bgEl = document.querySelector('.clock');
+            bgEl.style.backgroundImage = `url('${data.urls.regular}')`;
+        })
+}
+changeBg()
+setInterval(() => changeBg(), 3600000);
+
+
 updateTime();
