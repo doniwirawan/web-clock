@@ -10,12 +10,16 @@
 			box-sizing: border-box;
 			font-family: 'Lato','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 		}
+		
     	.clock{
 			text-align: center;
 			position: fixed;
 			height: 100%;
 			width: 100%;
-			background-color: rgb(29, 29, 29);
+			/* background-color: rgb(29, 29, 29); */
+			background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80');
+			background-repeat: no-repeat;
+			background-size: cover;
 			color: rgb(243, 243, 243);
 			font-size: 6em;
 			
@@ -70,10 +74,19 @@
 		.button:hover{
 			color: white;
 			background: rgb(27, 27, 27);
-			border: 1px solid white;
+			/* border: 1px solid white; */
 		}
 
 		@media (max-width: 500px){
+			.time,.date,.day{
+			display: block;
+			position: relative;
+			top: 130px;
+			
+			}
+			.time{
+				font-size: 1em;
+			}
 			.quote-area{
 			position: fixed;
 			text-align: center;
@@ -82,7 +95,7 @@
 			box-sizing: border-box;
 			left: 50%;
 			transform: translateX(-50%);
-			margin-top: 650px;
+			margin-top: 600px;
 			font-family: 'Lato','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 			letter-spacing: 1px;
 			}
