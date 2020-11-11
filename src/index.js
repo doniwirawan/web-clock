@@ -52,7 +52,7 @@ fetch("https://type.fit/api/quotes")
 
 
 const changeBg = () => {
-    fetch('https://api.unsplash.com/photos/random?client_id=kdft8XnUyAbOYEFK2HhZ0MwoidcaBlibl6egG4F-inI')
+    fetch('https://api.unsplash.com/photos/random?client_id=gfXzHUZJnwnsObUFyB0hxiOMXrt_nA4V7UyjpCrRK6w')
         .then(response => response.json())
         .then(data => {
             console.log(data.urls.regular);
@@ -61,7 +61,7 @@ const changeBg = () => {
         })
 }
 
-document.querySelector('.button2').addEventListener('click', changeBg());
+document.querySelector('.button2').addEventListener('click', changeBg);
 
 setInterval(() => changeBg(), 3600000);
 
