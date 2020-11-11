@@ -19,12 +19,20 @@ fetch("https://type.fit/api/quotes")
         document.querySelector('.button').addEventListener('click', function () {
             const root = document.querySelector('.quote-area');
             const random = Math.floor(Math.random() * data.length)
-            root.innerHTML = `
-                <p>"${data[random].text}"</p>
-                <p>-- ${data[random].author} --</p>
+            if (data[random].author === null) {
+                root.innerHTML = `
+                    <p>"${data[random].text}"</p>
+                    <p>-- ${data[random].author = 'Unknown'} --</p>
+                `
+            } else {
+                root.innerHTML = `
+                    <p>"${data[random].text}"</p>
+                    <p>-- ${data[random].author} --</p>
+                `
+
+            }
 
 
-    `
 
         })
 
