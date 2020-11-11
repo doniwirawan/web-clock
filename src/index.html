@@ -72,6 +72,33 @@
 			background: rgb(27, 27, 27);
 			border: 1px solid white;
 		}
+
+		@media (max-width: 500px){
+			.quote-area{
+			position: fixed;
+			text-align: center;
+			z-index: 999999;
+			color: white;
+			box-sizing: border-box;
+			left: 50%;
+			transform: translateX(-50%);
+			margin-top: 650px;
+			font-family: 'Lato','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			letter-spacing: 1px;
+			}
+			.button{
+			margin-top: 480px;
+			outline: none;
+			border: none;
+			padding: 10px;
+			border-radius: 20px;
+			}
+			.button:hover{
+			color: white;
+			background: rgb(27, 27, 27);
+			border: 1px solid white;
+			}
+		}
     </style>
     <body>
 		<div class="clock">
@@ -80,8 +107,7 @@
             <span class="day"></span>
 			<button class="button">Get Quote</button>
 		</div>
-		<div class="decoration1"></div>
-		<div class="decoration2"></div>
+		
 		<div class="quote-area"></div>
 		
 		<!-- adding comment -->
