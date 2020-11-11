@@ -47,15 +47,43 @@
 			top: 495px;
 			right: -35px;
 		}
+		.quote-area{
+			position: fixed;
+			text-align: center;
+			z-index: 999999;
+			color: white;
+			box-sizing: border-box;
+			left: 50%;
+			transform: translateX(-50%);
+			margin-top: 500px;
+			font-family: 'Lato','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			letter-spacing: 1px;
+		}
+		
+		.button{
+			margin-top: 500px;
+			outline: none;
+			border: none;
+			padding: 10px;
+			border-radius: 20px;
+		}
+		.button:hover{
+			color: white;
+			background: rgb(27, 27, 27);
+			border: 1px solid white;
+		}
     </style>
     <body>
-        <div class="clock">
-            <span class="time"></span>
+		<div class="clock">
+			<span class="time"></span>
             <span class="date"></span>
             <span class="day"></span>
+			<button class="button">Get Quote</button>
 		</div>
 		<div class="decoration1"></div>
 		<div class="decoration2"></div>
+		<div class="quote-area"></div>
+		
 		<!-- adding comment -->
         <script src="../node_modules/moment/moment.js"></script>
         <script src="../node_modules/jquery/dist/jquery.min.js"></script>
