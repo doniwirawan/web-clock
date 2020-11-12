@@ -1,1 +1,1 @@
-membuatr web clock yang biasa aja
+ini adalah web clock  yang menampilkan quote dan bakcground bisa diganti sesuai keinginan user, menggunakan api quote dan unsplash api
