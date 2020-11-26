@@ -10,7 +10,7 @@ const updateTime = () => {
     setTimeout(updateTime, 1000)
 };
 
-fetch("https://type.fit/api/quotes")
+fetch("//type.fit/api/quotes")
     .then(function (response) {
         return response.json();
     })
@@ -52,7 +52,7 @@ fetch("https://type.fit/api/quotes")
 
 
 const changeBg = () => {
-    fetch('https://api.unsplash.com/photos/random?client_id=gfXzHUZJnwnsObUFyB0hxiOMXrt_nA4V7UyjpCrRK6w')
+    fetch('//api.unsplash.com/photos/random?client_id=gfXzHUZJnwnsObUFyB0hxiOMXrt_nA4V7UyjpCrRK6w')
         .then(response => response.json())
         .then(data => {
             console.log(data.urls.regular);
