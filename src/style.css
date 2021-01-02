@@ -151,4 +151,25 @@ body {
         /* bottom: 10%; */
         margin-top: 500px;
     }
+
+    .quote-area {
+        position: fixed;
+        text-align: center;
+        z-index: 999999;
+        color: white;
+        box-sizing: border-box;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 410px;
+        font-family: 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        letter-spacing: 1px;
+    }
+
+    body {
+        background-image: url('./img/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
 }
