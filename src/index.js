@@ -15,6 +15,7 @@ fetch("//type.fit/api/quotes")
         return response.json();
     })
     .then(function (data) {
+        // menambahkan quote secara default
         const root = document.querySelector('.quote-area');
         const randoms = Math.floor(Math.random() * data.length);
         root.innerHTML = `
@@ -22,9 +23,8 @@ fetch("//type.fit/api/quotes")
                     <p>-- ${data[randoms].author} --</p>
                 `
 
-
+        // ketika diklik maka akan generate quote baru
         document.querySelector('.button').addEventListener('click', function () {
-            // const root = document.querySelector('.quote-area');
             const random = Math.floor(Math.random() * data.length)
             if (data[random].author === null) {
                 root.innerHTML = `
