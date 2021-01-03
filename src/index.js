@@ -57,7 +57,7 @@ const changeBg = () => {
         .then(data => {
             console.log(data.urls.regular);
             const bgEl = document.querySelector('.clock');
-            bgEl.style.backgroundImage = `url('${data.urls.raw}')`;
+            bgEl.style.backgroundImage = `url('${data.urls.regular}')`;
         })
 }
 
